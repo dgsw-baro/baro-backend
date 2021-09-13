@@ -26,4 +26,6 @@ export default {
   DB_SYNCHRONIZE: loadEnv("DB_SYNCHRONIZE"),
   DB_LOGGING: loadEnv("DB_LOGGING"),
   DB_NAME: loadEnv("DB_NAME"),
+  DODAM_ID: loadEnv("DODAM_ID"),
+  DODAM_SECRET: loadEnv("DODAM_SECRET"),
 };
