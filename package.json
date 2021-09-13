@@ -2,16 +2,25 @@
   "name": "backend",
   "version": "0.0.1",
   "devDependencies": {
-    "ts-node": "3.3.0",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
     "@types/node": "^8.0.29",
+    "ts-node": "3.3.0",
     "typescript": "3.3.3333"
   },
   "dependencies": {
-    "typeorm": "0.2.31",
+    "@types/dotenv": "^8.2.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql": "^2.14.1",
+    "mysql2": "^2.3.0",
     "reflect-metadata": "^0.1.10",
-    "mysql": "^2.14.1"
+    "typeorm": "0.2.31"
   },
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "start:dev": "cross-env NODE_ENV=development ts-node src/index.ts",
+    "start:prod": "cross-env NODE_ENV=production ts-node src/index.ts"
   }
 }
